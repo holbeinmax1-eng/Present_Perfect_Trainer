@@ -5,17 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Present Perfect Trainer</title>
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
+    
 </head>
 <body>
     <h1>
         Present Perfect Trainer
     </h1>
 
-    <form>
-        <h3>Trainer</h3>
-        <h5 id="infinitiv"></h5>
-        <input type="text" placeholder="Enter the Past Participle">
-        <button onsubmit="check()">Check</button>
+    <form onsubmit="check(); return false;">
+        <h2>Train</h2>
+        <h3 id="infinitiv"></h3>
+        <input type="text" id="past_participle" placeholder="Enter the Past Participle">
+        <button type="button" onclick="check()">Check</button>
+        
+        <p id="feedback"></p>
     </form>
+
+    <script src="main.js"></script>
 </html>
