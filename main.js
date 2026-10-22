@@ -13,8 +13,8 @@ function check() {
     var correct_past_participle = Table[random_index][1];
 
     if (past_participle === correct_past_participle) {
-        var add = [infinitiv, correct_past_participle}
-        alwaysCorrect.append(add)
+        var add = [infinitiv, correct_past_participle];
+        alwaysCorrect.push(add);
         document.getElementById("feedback").textContent = "Correct!";
     } else {
         document.getElementById("feedback").textContent = "Incorrect. The correct past participle is: " + correct_past_participle;
@@ -26,6 +26,7 @@ function check() {
         if (i !== Table[random_index]) {
             document.getElementById("infinitiv").textContent = Table[random_index][0]
             break
+        }
+    }
 }
-
-show_question(infinitiv);
+show_question(infinitiv)
