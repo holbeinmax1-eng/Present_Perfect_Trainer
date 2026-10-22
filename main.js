@@ -28,6 +28,7 @@ function check() {
             break
         }
     }
+    console.log(alwaysCorrect)
     show_question(infinitiv)
 }
 
