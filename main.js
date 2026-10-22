@@ -23,11 +23,10 @@ function check() {
     random_index = Math.floor(Math.random() * Table.length);
     for (const i of alwaysCorrect) {
         if (i !== Table[random_index]) {
-            document.getElementById("infinitiv").textContent = Table[random_index][0]
+            show_question(Table[random_index][0]);
             break
         }
     }
-    console.log(alwaysCorrect)
-    show_question(infinitiv)
+    
 }
 show_question(infinitiv)
