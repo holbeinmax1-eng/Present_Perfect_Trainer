@@ -30,4 +30,4 @@ function check() {
     console.log(alwaysCorrect)
     show_question(infinitiv)
 }
-
+show_question(infinitiv)
