@@ -28,5 +28,6 @@ function check() {
             break
         }
     }
+    show_question(infinitiv)
 }
-show_question(infinitiv)
+
